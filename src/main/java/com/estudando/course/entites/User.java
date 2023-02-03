@@ -23,8 +23,8 @@ import lombok.Setter;
 @Entity //para o jpa converter o BD para o modelo relacional
 @Table(name = "tb_user")
 public class User implements Serializable{
-	
-	
+
+
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)//isso e usado para alto encremento
@@ -33,6 +33,6 @@ public class User implements Serializable{
 	@EqualsAndHashCode.Exclude private String email;
 	@EqualsAndHashCode.Exclude private String phone;
 	@EqualsAndHashCode.Exclude private String password;
-		
+
 
 }
